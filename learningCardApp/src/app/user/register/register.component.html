@@ -1,0 +1,135 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center" class="login-main">
+    <mat-card class="box"> 
+      <form [formGroup]="user" (ngSubmit)="onSubmit()">
+        <mat-card-header>
+          <mat-card-title>Register</mat-card-title>
+        </mat-card-header>
+        <mat-card-content fxLayout="column">
+          <span fxLayout="row" fxLayoutGap="2%">
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="first name"
+                aria-label="first name"
+                formControlName="firstname"
+                data-cy="firstname"
+              />
+              <mat-error data-cy=firstnameError
+                *ngIf="
+                  user.get('firstname').errors && user.get('firstname').touched
+                "
+              >
+                {{ getErrorMessage(user.get('firstname').errors) }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="last name"
+                aria-label="last name"
+                formControlName="lastname"
+                data-cy=lastname
+              />
+              <mat-error
+              data-cy="lastnameError"
+                *ngIf="
+                  user.get('lastname').errors && user.get('lastname').touched
+                "
+              >
+                {{ getErrorMessage(user.get('lastname').errors) }}
+              </mat-error>
+            </mat-form-field>
+          </span>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder="email"
+              aria-label="email"
+              data-cy="register-email"
+              formControlName="email"
+              data-cy="email"
+              
+            />
+            <mat-error
+            data-cy="emailError"
+              *ngIf="user.get('email').errors && user.get('email').touched"
+            >
+              {{ getErrorMessage(user.get('email').errors) }}
+            </mat-error>
+          </mat-form-field>
+          <span fxLayout="column" formGroupName="passwordGroup">
+            <mat-form-field>
+              <input
+                type="password"
+                matInput
+                placeholder="password"
+                aria-label="password"
+                formControlName="password"
+                data-cy="password"
+              />
+              <mat-error
+              data-cy="passwordError"
+                *ngIf="
+                  user.get('passwordGroup').get('password').errors &&
+                  user.get('passwordGroup').get('password').touched
+                "
+              >
+                {{
+                  getErrorMessage(
+                    user.get('passwordGroup').get('password').errors
+                  )
+                }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                type="password"
+                matInput
+                placeholder="confirm password"
+                aria-label="confirm password"
+                formControlName="confirmPassword"
+                data-cy="confirmPassword"
+              />
+              <mat-error
+              data-cy="confirmPasswordError"
+                *ngIf="
+                  user.get('passwordGroup').get('confirmPassword').errors &&
+                  user.get('passwordGroup').get('confirmPassword').touched
+                "
+              >
+                {{
+                  getErrorMessage(
+                    user.get('passwordGroup').get('confirmPassword').errors
+                  )
+                }}
+              </mat-error>
+            </mat-form-field>
+            <mat-error
+            data-cy="passwordConfirmationError"
+              *ngIf="
+                user.get('passwordGroup').errors &&
+                user.get('passwordGroup').get('confirmPassword').touched &&
+                user.get('passwordGroup').get('password').touched
+              "
+            >
+              {{ getErrorMessage(user.get('passwordGroup').errors) }}
+            </mat-error>
+          </span>
+        </mat-card-content>
+  
+        <mat-card-actions fxLayout="row" fxLayoutAlign="space-between center">
+          <a [routerLink]="['/login']">login</a>
+  
+          <button
+            mat-raised-button
+            type="submit"
+            color="primary"
+            data-cy="register"
+          >
+            Register
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </div>
+  

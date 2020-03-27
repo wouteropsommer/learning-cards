@@ -1,0 +1,22 @@
+<ngb-carousel *ngIf="images" class="background">
+  <ng-template ngbSlide>
+    <img [src]='images[0]' class="img" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3>Need help during exams? Look no further!</h3>
+      <p>App to make and learn your own flashcards</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]='images[1]' class="img" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>Text to speech available</h3>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]='images[2]' class="img" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Create your own folders!</h3>
+      <p>Click start learning to begin.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

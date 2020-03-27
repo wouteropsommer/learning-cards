@@ -1,0 +1,147 @@
+<form [formGroup]="cardSetFromGroup" (ngSubmit)='onSubmit()'>
+  <div ng-repeat="4">
+    <mat-card class="backgroundWhite">
+      <mat-card-title>Create a new set!</mat-card-title>
+      <div class="container">
+        <div class="row centerContent">
+          <div class="col-12">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput aria-label="title" placeholder="Title" type="tekst" formControlName="title" required
+                  style="width: 100%;">
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <div style="height: 10px;">
+      <span style="width: 100%; height: 10px;"></span>
+    </div>
+  </div>
+
+  <div ng-repeat="4">
+    <mat-card class="backgroundWhite">
+      <div class="container">
+        <div class="row centerContent">
+          <div class="col-1">
+            <mat-icon class="size-icon pointer">delete</mat-icon>
+          </div>
+          <div class="col-3">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="term1" placeholder="Term" style="width: 100%;">
+              </mat-form-field>
+            </p>
+          </div>
+          <div class="col-8">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="def1" placeholder="Definition">
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <div style="height: 10px;">
+      <span style="width: 100%; height: 10px;"></span>
+    </div>
+  </div>
+
+  <div ng-repeat="4">
+    <mat-card class="backgroundWhite">
+      <div class="container">
+        <div class="row centerContent">
+          <div class="col-1">
+            <mat-icon class="size-icon pointer">delete</mat-icon>
+          </div>
+          <div class="col-3">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="term2" placeholder="Term" style="width: 100%;">
+              </mat-form-field>
+            </p>
+          </div>
+          <div class="col-8">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="def2" placeholder="Definition">
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <div style="height: 10px;">
+      <span style="width: 100%; height: 10px;"></span>
+    </div>
+  </div>
+
+  <div ng-repeat="4">
+    <mat-card class="backgroundWhite">
+      <div class="container">
+        <div class="row centerContent">
+          <div class="col-1">
+            <mat-icon class="size-icon pointer">delete</mat-icon>
+          </div>
+          <div class="col-3">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="term3" placeholder="Term" style="width: 100%;">
+              </mat-form-field>
+            </p>
+          </div>
+          <div class="col-8">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="def3" placeholder="Definition">
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <div style="height: 10px;">
+      <span style="width: 100%; height: 10px;"></span>
+    </div>
+  </div>
+
+  <div ng-repeat="4">
+    <mat-card class="backgroundWhite">
+      <div class="container">
+        <div class="row centerContent">
+          <div class="col-1">
+            <mat-icon class="size-icon pointer">delete</mat-icon>
+          </div>
+          <div class="col-3">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="term4" placeholder="Term" style="width: 100%;">
+              </mat-form-field>
+            </p>
+          </div>
+          <div class="col-8">
+            <p>
+              <mat-form-field appearance="legacy" style="width: 100%;">
+                <input matInput formControlName="def4" placeholder="Definition">
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <div style="height: 10px;">
+      <span style="width: 100%; height: 10px;"></span>
+    </div>
+  </div>
+
+  <div>
+    <mat-card class="centerContent backgroundWhite">
+      <button type="submit">
+        <mat-icon class="size-icon pointer" color="primary">add_box</mat-icon>
+      </button>
+    </mat-card>
+  </div>
+
+</form>

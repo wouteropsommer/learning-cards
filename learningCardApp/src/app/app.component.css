@@ -1,0 +1,13 @@
+.nav {
+  margin-bottom: 3.5em;
+}
+
+body {
+  background-image: url("./img/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+

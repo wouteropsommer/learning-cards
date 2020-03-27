@@ -1,0 +1,75 @@
+.container {
+    border: 0.2em solid red;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+
+.flip-container {
+	perspective: 1000px;
+
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+}
+
+.front {
+    z-index: 2;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+
+	transition: 0.3s background-color;
+
+	border: 1px solid #dee2e3;
+    overflow-y: auto;
+
+    
+    -webkit-overflow-scrolling: touch;
+
+    z-index: 3;
+	
+	transform: rotateY(0deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+
+.flip-container, .front {
+    width: 60vw;
+	height: 60vh;
+}
+
+.flipper {
+	position: relative;
+}
+
+.backgroundWhite {
+	background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .positionfix {
+	margin-left: 1em;
+  }

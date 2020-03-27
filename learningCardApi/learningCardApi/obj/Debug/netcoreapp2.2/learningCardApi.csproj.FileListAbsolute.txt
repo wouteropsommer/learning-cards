@@ -1,0 +1,16 @@
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\learningCardApi.deps.json
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\learningCardApi.runtimeconfig.json
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\learningCardApi.runtimeconfig.dev.json
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\learningCardApi.dll
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\learningCardApi.pdb
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.csprojAssemblyReference.cache
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.RazorAssemblyInfo.cache
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.RazorAssemblyInfo.cs
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.AssemblyInfoInputs.cache
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.AssemblyInfo.cs
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.RazorTargetAssemblyInfo.cache
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.dll
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\obj\Debug\netcoreapp2.2\learningCardApi.pdb
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Wouter\Documents\HOGENT_JAAR_2\Semester2\PROJECTEN\LearningCardApi\learningCardApi\learningCardApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

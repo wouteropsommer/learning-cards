@@ -1,0 +1,25 @@
+<!-- <mat-card class="card">
+  <div class="centerContent">
+    <span>
+      learning-card works!
+    </span>
+  </div>
+</mat-card> -->
+
+<section class="section">
+  <div class="card-container">
+    <div class="flip-container" [class.flip]="isFlipped" [class.fadeOut]="isFadeOut">
+      <div class="flipper" [class.noanimate]="isNotAnimating">
+        <div class="front backgroundWhite" (click)="toggleFlip()" fragment="top">
+          <p>{{innerHTMLFront}}</p>
+        </div>
+        <div class="back backgroundWhite" #backDiv (click)="toggleFlip()" fragment="top">
+          <p>{{innerHTMLBack}}</p>
+        </div>
+      </div>
+    </div>
+    <mat-icon (click)="previousCard()" class="arrow_back">arrow_back</mat-icon>
+    <mat-icon (click)="nextCard()" class="arrow_forward">arrow_forward</mat-icon>
+  </div>
+  <mat-icon class="sound" (click)="speak()">volume_up</mat-icon>
+</section>

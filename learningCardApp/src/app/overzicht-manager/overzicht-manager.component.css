@@ -1,0 +1,68 @@
+/* :host {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  } */
+  
+  /* .folder {
+    padding: 8px;
+    overflow: hidden;
+  } */
+  
+  .folder-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+   .container {
+    align-content: left;
+  }
+
+
+  .listItem:hover {
+    font-weight: bold;
+    background-color: #e4ebf5;
+  }
+
+.divClickable {
+  width: 100%;
+}
+
+.test {
+  height: 100%;
+  border: 0.1em solid red;
+}
+
+.bolditem {
+  font-weight: bold;
+}
+
+.divWithWidth {
+  height: 100%;
+  width: 30%;
+}
+
+div {
+  /* border: 0.1em solid red; */
+  padding: 0;
+}
+
+.backgroundWhite {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+}

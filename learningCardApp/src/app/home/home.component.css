@@ -1,0 +1,10 @@
+.background {
+    left: 0px; 
+    top: 0px;     
+    margin-top: 3.5em;
+}
+
+.img {
+    width: 100%;
+    height: stretch;
+}

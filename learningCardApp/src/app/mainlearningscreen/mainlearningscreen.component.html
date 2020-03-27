@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="noMarginDiv row">
+        <app-overzicht-manager
+         (showCreateSet)="changebooleanShowCreateSet()"
+         (learnCardSetClicked)="learningCardClicked($event)"
+         (currentRootChanged)="currentRootchange($event)"
+         [refreshQuerry]="refresh"
+         class="noPadding col-3"></app-overzicht-manager>
+        <app-learning-card [currentSet]="currentSet" *ngIf=showLearning class="col-9"></app-learning-card>
+        <app-create-cardset
+         (refreshRequest)="sendRequest()"
+         [currentRoot]="currentRoot"
+          *ngIf=showCreateSet class="col-9"></app-create-cardset>
+
+          <section *ngIf="!showCreateSet && !showLearning" class="section positionfix">
+            <div class="card-container">
+              <div class="flip-container">
+                <div class="flipper">
+                  <div class="front backgroundWhite" fragment="top">
+                      <p>tip: right click on a folder to access menu!</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+    </div>
+</div>

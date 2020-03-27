@@ -1,0 +1,150 @@
+/* .card {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+.centerContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.flip-container {
+	perspective: 1000px;
+
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: opacity .0s ease-in-out;
+}
+
+/* flip the pane when hovered */
+.flip-container.flip .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 60vw;
+	height: 60vh;
+}
+
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.flipper.noanimate {
+	transition: 0s !important;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    z-index: 2;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+
+	transition: 0.3s background-color;
+
+	border: 1px solid #dee2e3;
+    overflow-y: auto;
+
+    /* Pretty scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 3;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+
+p {
+    padding-top: 20px !important;
+}
+
+.front:active, .back:active { 
+  background-color: hsl(227, 76%, 99%);
+  transition: .3s background-color; 
+} 
+
+.arrow_back {
+    cursor: pointer;
+    margin-left: 1em;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+}
+
+.arrow_forward {
+    cursor: pointer;
+    margin-left: 0.8em;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+}
+
+.backgroundWhite {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+  }
+
+  .sound {
+	width: 50px;
+    height: 50px;
+	font-size: 50px;
+	z-index: 4 !important;
+	color: black;
+	opacity: 100%;
+	cursor: pointer;
+
+	position: absolute;
+  	top: 0.5em;
+  	right: 4.5em;
+  
+  }
+
+ 
